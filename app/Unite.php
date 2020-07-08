@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Unite extends Model
 {
     
-    public function produits(){
+    public function produit(){
         return $this->hasMany('App\Produit');
     }
 }

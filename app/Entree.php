@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Entree extends Model
 {
-    public function Produit(){
+    public function produit(){
         return $this->belongsTo('App\Produit');
     }
 }

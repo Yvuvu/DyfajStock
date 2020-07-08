@@ -11,24 +11,14 @@ class Produit extends Model
    protected $fillable = [
       'categorie_id','unite_id','nom','prixUnitaire','quantiteProduit'
    ];
-    public function Categorie()
+    public function categorie()
     {
         return $this->belongsTo('App\Categorie');
     }
 
-    public function Unite()
+    public function unite()
     {
         return $this->belongsTo('App\Unite');
-    }
-
-    public function Ventes()
-    {
-        return $this->hasMany('App\Vente');
-    }
-
-    public function Entrees()
-    {
-        return $this->hasMany('App\Entree');
     }
 
 }
