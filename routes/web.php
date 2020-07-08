@@ -25,3 +25,9 @@ Route::get('produits','ProduitController@index')->name('produits');
 Route::get('ventes','VenteController@index')->name('ventes');
 Route::post('enregistrer-vente','VenteController@store')->name('add-ventes');
 Route::get('mouvements','ProduitController@mouvements')->name('mouvements');
+
+//Routes des produits
+Route::get('nouveau-produit','ProduitsController@form');
+Route::get('liste_des_produits','ProduitsController@index');
+Route::post('ajouter_produit', 'ProduitsController@store');
+Route::get('nouveau-produit','ProduitsController@form');
