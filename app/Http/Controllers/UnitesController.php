@@ -6,7 +6,7 @@ use App\Unite;
 
 use Illuminate\Http\Request;
 
-class UnitesControler extends Controller
+class UnitesController extends Controller
 {
      /**
      * Display a listing of the resource.
@@ -26,7 +26,7 @@ class UnitesControler extends Controller
      */
     public function create(Unite $unite)
     {
-        return view('unite.forme');
+        return view('unites.forme');
     }
 
     public function store(Request $request)

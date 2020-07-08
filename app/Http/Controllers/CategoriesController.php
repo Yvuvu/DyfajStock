@@ -14,8 +14,8 @@ class CategoriesController extends Controller
      */
     public function liste()
     {
-        $categorie = Categorie::all();
-        return view('categorie.liste',['categorie'=>$categorie]);
+        $categories = Categorie::all();
+        return view('categorie.liste',['categories'=>$categories]);
     }
 
     /**

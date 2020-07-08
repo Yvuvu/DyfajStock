@@ -8,6 +8,6 @@ class Unite extends Model
 {
     
     public function produits(){
-        return $this->hasMany('App\produit');
+        return $this->hasMany('App\Produit');
     }
 }

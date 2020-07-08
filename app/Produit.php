@@ -6,24 +6,29 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produit extends Model
 {
-    public function categorie()
+   
+    
+   protected $fillable = [
+      'categorie_id','unite_id','nom','prixUnitaire','quantiteProduit'
+   ];
+    public function Categorie()
     {
-        return $this->belongsTo('App\categorie');
+        return $this->belongsTo('App\Categorie');
     }
 
-    public function unite()
+    public function Unite()
     {
-        return $this->belongsTo('App\unite');
+        return $this->belongsTo('App\Unite');
     }
 
-    public function ventes()
+    public function Ventes()
     {
-        return $this->hasMany('App\vente');
+        return $this->hasMany('App\Vente');
     }
 
-    public function entrees()
+    public function Entrees()
     {
-        return $this->hasMany('App\entree');
+        return $this->hasMany('App\Entree');
     }
 
 }

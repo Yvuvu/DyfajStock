@@ -24,20 +24,21 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 //Routes des produits
-Route::view('produits','produits.forme');
+Route::get('nouveau-produit','ProduitsController@form');
 Route::view(' liste','produits.liste');
 Route::get('liste_des_produits','ProduitsController@index');
 Route::post('ajouter_produit', 'ProduitsController@store');
-Route::get('creer_produit','ProduitsController@forme');
+Route::get('nouveau-produit','ProduitsController@form');
 
-// Routes des cathegories
-Route::view('categorie','categorie.forme');
-Route::get('liste_des_categories', 'CategoriesController@list');
-Route::post('ajouter_categorie', 'CategoriesController@store');
-Route::get('forme-categorie', 'CategoriesController@create');
 
-//Routes des unites
-Route::view('unites','unites.forme');
-Route::get('liste_des_unites', 'UnitesController@list');
-Route::post('ajouter_unite', 'UnitesController@store');
-Route::get('forme-unite', 'UnitesController@create');
+// // Routes des cathegories
+// Route::view('categorie','categorie.forme');
+// Route::get('liste_des_categories', 'CategoriesController@liste');
+// Route::post('ajouter_categorie', 'CategoriesController@store');
+// Route::get('forme_categorie', 'CategoriesController@create');
+
+// //Routes des unites
+// Route::view('unite','unites.forme');
+// Route::get('liste_des_unites', 'UnitesController@liste');
+// Route::post('ajouter_unite', 'UnitesController@store');
+// Route::get('forme_unite', 'UnitesController@create');
