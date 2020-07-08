@@ -2,7 +2,7 @@
 @section('title','Nouveau-produit')
 @section('menu')
 <li class="nav-item px-lg-4">
-<a class="nav-link text-uppercase text-expanded" href="">Produits
+<a class="nav-link text-uppercase text-expanded" href="{{ route('produits') }}">Produits
   <span class="sr-only">(current)</span>
 </a>
 </li>
@@ -13,10 +13,10 @@
 <a class="nav-link text-uppercase text-expanded" href="{{ URL('nouvelle-entree') }}">Nouvelle entrée</a>
 </li>
 <li class="nav-item  px-lg-4">
-<a class="nav-link text-uppercase text-expanded" href="">Vente</a>
+<a class="nav-link text-uppercase text-expanded" href="{{ route('ventes') }">Vente</a>
 </li>
 <li class="nav-item px-lg-4">
-<a class="nav-link text-uppercase text-expanded" href="">Mouvements</a>
+<a class="nav-link text-uppercase text-expanded" href="{{ route('mouvements') }}">Mouvements</a>
 </li>
 <li class="nav-item px-lg-4">
 <a class="nav-link text-uppercase text-expanded" href="{{ URL('users') }}">Utilisateurs</a>
