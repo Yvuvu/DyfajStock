@@ -3,7 +3,7 @@
 @section('title', 'Liste des produits')  
 
 @section('menu')
-@if(auth()->user()->role_id==1)
+{{-- @if(auth()->user()->role_id==1) --}}
       <li class="nav-item active px-lg-4">
         <a class="nav-link text-uppercase text-expanded" href="{{ route('produits') }}">Produits
           <span class="sr-only">(current)</span>
@@ -13,7 +13,7 @@
         <a class="nav-link text-uppercase text-expanded" href="{{ URL('nouveau-produit') }}">Nouveau produit</a>
       </li>
       <li class="nav-item px-lg-4">
-        <a class="nav-link text-uppercase text-expanded" href="{{ URL('nouvelle-entree') }}">Nouvelle entrée</a>
+        <a class="nav-link text-uppercase text-expanded" href="{{ URL('entree') }}">Nouvelle entrée</a>
       </li>
       <li class="nav-item px-lg-4">
         <a class="nav-link text-uppercase text-expanded" href="{{ route('ventes') }}">Vente</a>
@@ -25,7 +25,7 @@
         <a class="nav-link text-uppercase text-expanded" href="{{ URL('users') }}">Utilisateurs</a>
       </li>
 
-      @else
+      {{-- @else
       <li class="nav-item active px-lg-4">
         <a class="nav-link text-uppercase text-expanded" href="{{ route('produits') }}">Produits
             <span class="sr-only">(current)</span>
@@ -34,7 +34,7 @@
     <li class="nav-item px-lg-4">
         <a class="nav-link text-uppercase text-expanded" href="{{ route('ventes') }}">Vente</a>
     </li>
-    @endif 
+    @endif  --}}
 @endsection
 
 @section('contenu')

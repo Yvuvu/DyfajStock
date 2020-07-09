@@ -8,7 +8,7 @@ use App\Unite;
 
 use Illuminate\Http\Request;
 
-class ProduitController extends Controller
+class ProduitsController extends Controller
 {
     /**
      * Display a listing of the resource.
